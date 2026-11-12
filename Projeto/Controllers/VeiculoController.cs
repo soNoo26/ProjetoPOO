@@ -26,6 +26,7 @@ namespace ProjetoExemploCerto.Controllers
             command.Parameters.AddWithValue("@Marca", veiculo.Marca);
             command.Parameters.AddWithValue("@Modelo", veiculo.Modelo);
             command.Parameters.AddWithValue("@Ano", veiculo.Ano);
+            command.Parameters.AddWithValue("@Cor", string.IsNullOrWhiteSpace(veiculo.Cor) ? (object)System.DBNull.Value : veiculo.Cor);
             command.Parameters.AddWithValue("@Motor", (object)veiculo.Motor ?? System.DBNull.Value);
             command.Parameters.AddWithValue("@Combustivel", (object)veiculo.Combustivel ?? System.DBNull.Value);
 
@@ -48,6 +49,7 @@ namespace ProjetoExemploCerto.Controllers
             command.Parameters.AddWithValue("@Marca", veiculo.Marca);
             command.Parameters.AddWithValue("@Modelo", veiculo.Modelo);
             command.Parameters.AddWithValue("@Ano", veiculo.Ano);
+            command.Parameters.AddWithValue("@Cor", string.IsNullOrWhiteSpace(veiculo.Cor) ? (object)System.DBNull.Value : veiculo.Cor);
             command.Parameters.AddWithValue("@Motor", (object)veiculo.Motor ?? System.DBNull.Value);
             command.Parameters.AddWithValue("@Combustivel", (object)veiculo.Combustivel ?? System.DBNull.Value);
             command.Parameters.AddWithValue("@VeiculoId", veiculo.IdVeiculo);
@@ -114,6 +116,7 @@ namespace ProjetoExemploCerto.Controllers
                 veiculo.Marca = row["marca"].ToString();
                 veiculo.Modelo = row["modelo"].ToString();
                 veiculo.Ano = (int)row["ano"];
+                veiculo.Cor = row["cor"].ToString();
                 veiculo.Motor = row["motor"].ToString();
                 veiculo.Combustivel = row["combustivel"].ToString();
 

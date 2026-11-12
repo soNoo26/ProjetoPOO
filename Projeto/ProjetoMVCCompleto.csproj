@@ -181,6 +181,8 @@
     <None Include="Images\icons8-tools-90.png" />
     <None Include="Images\icons8-customer-90.png" />
     <None Include="Images\icons8-clipboard-100.png" />
+    <None Include="Images\powerful-headlights-particle-view-modern-luxury-cars-parked-indoors-daytime.jpg" />
+    <None Include="Images\mid-adult-mechanic-working-laptop-while-running-car-diagnostic-with-his-coworker-auto-repair-shop.jpg" />
     <Content Include="ProjetoMVC_SCRIPT.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

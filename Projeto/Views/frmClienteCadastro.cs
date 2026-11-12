@@ -18,11 +18,18 @@ namespace ProjetoExemploCerto.Views
 
         private int acao;
         private int clienteId;
+
+        // A tela não tem esses campos; guardamos os valores
+        // originais para não apagá-los ao atualizar
+        private int cep;
+        private int qtVeiculos;
+
         public frmClienteCadastro(int Acao = 1, Cliente cliente = null)
         {
             InitializeComponent();
 
             acao = Acao;
+            btnCancelar.Click += btnCancelar_Click;
 
             if (cliente != null) 
             {
@@ -32,6 +39,9 @@ namespace ProjetoExemploCerto.Views
                 txtTelefone.Text = cliente.Telefone;
                 txtEmail.Text = cliente.Email;
                 txtCidade.Text = cliente.Cidade;
+                txtEndereco.Text = cliente.Endereco;
+                cep = cliente.CEP;
+                qtVeiculos = cliente.QtVeiculos;
             }
             if (acao == 2)
                 btnSalvar.Text = "Atualizar";
@@ -58,14 +68,18 @@ namespace ProjetoExemploCerto.Views
             cliente.Telefone = txtTelefone.Text.Trim();
             cliente.Email = txtEmail.Text.Trim();
             cliente.Cidade = txtCidade.Text.Trim();
+            cliente.Endereco = txtEndereco.Text.Trim();
+            cliente.ClienteId = clienteId;
+            cliente.CEP = cep;
+            cliente.QtVeiculos = qtVeiculos;
 
             try
             {
-                int resultado = clienteController.Inserir(cliente);
+                int resultado = acao == 2 ? clienteController.Alterar(cliente) : clienteController.Inserir(cliente);
 
                 if (resultado > 0)
                 {
-                    MessageBox.Show("Cliente cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show(acao == 2 ? "Cliente atualizado com sucesso!" : "Cliente cadastrado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     this.Close();
                 }
                 else

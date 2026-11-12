@@ -115,7 +115,7 @@ namespace ProjetoExemploCerto.Views
                 cmbVeiculo.DataSource = null;
                 cmbVeiculo.DataSource = veiculos;
                 cmbVeiculo.DisplayMember = "Modelo";
-                cmbVeiculo.ValueMember = "VeiculoId";
+                cmbVeiculo.ValueMember = "IdVeiculo";
                 cmbVeiculo.SelectedIndex = -1;
             }
             catch (Exception ex)
@@ -387,7 +387,7 @@ namespace ProjetoExemploCerto.Views
                 cmbVeiculo.DataSource = null;
                 cmbVeiculo.DataSource = veiculos;
                 cmbVeiculo.DisplayMember = "Modelo";
-                cmbVeiculo.ValueMember = "VeiculoId";
+                cmbVeiculo.ValueMember = "IdVeiculo";
 
                 cmbVeiculo.SelectedValue = os.VeiculoId;
 

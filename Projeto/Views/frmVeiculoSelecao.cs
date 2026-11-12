@@ -29,43 +29,43 @@ namespace ProjetoExemploCerto.Views
                 else
                 {
                     veiculos = veiculoController.GetByFilter(txtPesquisa.Text.Trim());
-
-                    dgvRegistros.DataSource = null;
-                    dgvRegistros.DataSource = veiculos;
-
-                    lblRegistros.Text = "Registros encontrados: " + veiculos.Count;
-
-                    if (dgvRegistros.Columns["IdVeiculo"] != null)
-
-                        dgvRegistros.Columns["IdVeiculo"].HeaderText = "Codigo";
-
-                    if (dgvRegistros.Columns["IdCliente"] != null)
-                        dgvRegistros.Columns["IdCliente"].HeaderText = "Codigo Cliente";
-
-                    if (dgvRegistros.Columns["Placa"] != null)
-                        dgvRegistros.Columns["Placa"].HeaderText = "Placa";
-
-                    if (dgvRegistros.Columns["Marca"] != null)
-                        dgvRegistros.Columns["Marca"].HeaderText = "Marca";
-
-                    if (dgvRegistros.Columns["Modelo"] != null)
-                        dgvRegistros.Columns["Modelo"].HeaderText = "Modelo";
-
-                    if (dgvRegistros.Columns["Ano"] != null)
-                        dgvRegistros.Columns["Ano"].HeaderText = "Ano";
-
-                    if (dgvRegistros.Columns["Motor"] != null)
-                        dgvRegistros.Columns["Motor"].HeaderText = "Motor";
-
-                    if (dgvRegistros.Columns["Combustivel"] != null)
-                        dgvRegistros.Columns["Combustivel"].HeaderText = "Combustível";
-
-                    if (dgvRegistros.Columns["ClienteNome"] != null)
-                        dgvRegistros.Columns["ClienteNome"].HeaderText = "Proprietário";
-
-                    if (dgvRegistros.Columns["ClienteId"] != null)
-                        dgvRegistros.Columns["ClienteId"].Visible = false;
                 }
+
+                // A grade é preenchida com ou sem pesquisa
+                dgvRegistros.DataSource = null;
+                dgvRegistros.DataSource = veiculos;
+
+                lblRegistros.Text = "Registros encontrados: " + veiculos.Count;
+
+                if (dgvRegistros.Columns["IdVeiculo"] != null)
+                    dgvRegistros.Columns["IdVeiculo"].HeaderText = "Codigo";
+
+                if (dgvRegistros.Columns["IdCliente"] != null)
+                    dgvRegistros.Columns["IdCliente"].HeaderText = "Codigo Cliente";
+
+                if (dgvRegistros.Columns["Placa"] != null)
+                    dgvRegistros.Columns["Placa"].HeaderText = "Placa";
+
+                if (dgvRegistros.Columns["Marca"] != null)
+                    dgvRegistros.Columns["Marca"].HeaderText = "Marca";
+
+                if (dgvRegistros.Columns["Modelo"] != null)
+                    dgvRegistros.Columns["Modelo"].HeaderText = "Modelo";
+
+                if (dgvRegistros.Columns["Ano"] != null)
+                    dgvRegistros.Columns["Ano"].HeaderText = "Ano";
+
+                if (dgvRegistros.Columns["Motor"] != null)
+                    dgvRegistros.Columns["Motor"].HeaderText = "Motor";
+
+                if (dgvRegistros.Columns["Combustivel"] != null)
+                    dgvRegistros.Columns["Combustivel"].HeaderText = "Combustível";
+
+                if (dgvRegistros.Columns["ClienteNome"] != null)
+                    dgvRegistros.Columns["ClienteNome"].HeaderText = "Proprietário";
+
+                if (dgvRegistros.Columns["ClienteId"] != null)
+                    dgvRegistros.Columns["ClienteId"].Visible = false;
             }
             catch (Exception ex)
             {
@@ -74,7 +74,7 @@ namespace ProjetoExemploCerto.Views
         }
         private Veiculo GetVeiculoSelecionado()
         {
-            if (dgvRegistros.CurrentRow != null)
+            if (dgvRegistros.CurrentRow == null)
                 return null;
 
             return dgvRegistros.CurrentRow.DataBoundItem as Veiculo;
@@ -123,6 +123,10 @@ namespace ProjetoExemploCerto.Views
                     veiculoController.Excluir(veiculo.IdVeiculo);
                     MessageBox.Show("Veículo excluído com sucesso.");
                     AtualizarGrid();
+                }
+                catch (System.Data.SqlClient.SqlException ex) when (ex.Number == 547)
+                {
+                    MessageBox.Show("Não é possível excluir: este veículo possui ordens de serviço.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
                 catch (Exception ex)
                 {

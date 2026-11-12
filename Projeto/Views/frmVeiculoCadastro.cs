@@ -19,6 +19,8 @@ namespace ProjetoExemploCerto.Views
             InitializeComponent();
 
             acao = Acao;
+            btnSalvar.Click += btnSalvar_Click;
+            btnCancelar.Click += btnCancelar_Click;
 
             CarregarClientes();
 
@@ -117,6 +119,11 @@ namespace ProjetoExemploCerto.Views
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+
+        private void lblMotor_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

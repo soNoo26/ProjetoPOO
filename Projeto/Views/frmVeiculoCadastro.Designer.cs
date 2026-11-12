@@ -51,10 +51,10 @@
             // btnCancelar
             // 
             this.btnCancelar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancelar.Location = new System.Drawing.Point(577, 161);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(487, 139);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(100, 28);
+            this.btnCancelar.Size = new System.Drawing.Size(83, 28);
             this.btnCancelar.TabIndex = 39;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -62,10 +62,10 @@
             // btnSalvar
             // 
             this.btnSalvar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSalvar.Location = new System.Drawing.Point(469, 161);
-            this.btnSalvar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalvar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(398, 139);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(100, 28);
+            this.btnSalvar.Size = new System.Drawing.Size(83, 28);
             this.btnSalvar.TabIndex = 38;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -73,62 +73,63 @@
             // lblCombustivel
             // 
             this.lblCombustivel.AutoSize = true;
-            this.lblCombustivel.Location = new System.Drawing.Point(563, 71);
-            this.lblCombustivel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCombustivel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCombustivel.Location = new System.Drawing.Point(449, 58);
             this.lblCombustivel.Name = "lblCombustivel";
-            this.lblCombustivel.Size = new System.Drawing.Size(115, 16);
+            this.lblCombustivel.Size = new System.Drawing.Size(121, 17);
             this.lblCombustivel.TabIndex = 36;
             this.lblCombustivel.Text = "Tipo Combustivel:";
             // 
             // txtMarca
             // 
-            this.txtMarca.Location = new System.Drawing.Point(16, 93);
-            this.txtMarca.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMarca.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMarca.Location = new System.Drawing.Point(12, 76);
             this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(232, 22);
+            this.txtMarca.Size = new System.Drawing.Size(175, 25);
             this.txtMarca.TabIndex = 35;
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(16, 71);
-            this.lblMarca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMarca.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Location = new System.Drawing.Point(12, 58);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(48, 16);
+            this.lblMarca.Size = new System.Drawing.Size(49, 17);
             this.lblMarca.TabIndex = 34;
             this.lblMarca.Text = "Marca:";
             // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
-            this.lblCliente.Location = new System.Drawing.Point(111, 15);
-            this.lblCliente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCliente.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Location = new System.Drawing.Point(83, 12);
             this.lblCliente.Name = "lblCliente";
-            this.lblCliente.Size = new System.Drawing.Size(51, 16);
+            this.lblCliente.Size = new System.Drawing.Size(55, 17);
             this.lblCliente.TabIndex = 32;
             this.lblCliente.Text = "Cliente:";
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(16, 34);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4);
+            this.txtId.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Location = new System.Drawing.Point(12, 28);
             this.txtId.Name = "txtId";
             this.txtId.ReadOnly = true;
-            this.txtId.Size = new System.Drawing.Size(85, 22);
+            this.txtId.Size = new System.Drawing.Size(65, 25);
             this.txtId.TabIndex = 31;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 15);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 16);
+            this.label1.Size = new System.Drawing.Size(56, 17);
             this.label1.TabIndex = 30;
             this.label1.Text = "Código:";
             // 
             // cmbCombustivel
             // 
+            this.cmbCombustivel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCombustivel.FormattingEnabled = true;
             this.cmbCombustivel.Items.AddRange(new object[] {
             "Alcool ",
@@ -138,97 +139,99 @@
             "Eletrico",
             "Hibrido",
             "GNV"});
-            this.cmbCombustivel.Location = new System.Drawing.Point(567, 91);
-            this.cmbCombustivel.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbCombustivel.Location = new System.Drawing.Point(459, 76);
             this.cmbCombustivel.Name = "cmbCombustivel";
-            this.cmbCombustivel.Size = new System.Drawing.Size(109, 24);
+            this.cmbCombustivel.Size = new System.Drawing.Size(110, 25);
             this.cmbCombustivel.TabIndex = 40;
             // 
             // txtPlaca
             // 
-            this.txtPlaca.Location = new System.Drawing.Point(16, 154);
-            this.txtPlaca.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPlaca.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPlaca.Location = new System.Drawing.Point(12, 125);
             this.txtPlaca.Name = "txtPlaca";
-            this.txtPlaca.Size = new System.Drawing.Size(160, 22);
+            this.txtPlaca.Size = new System.Drawing.Size(121, 25);
             this.txtPlaca.TabIndex = 42;
             // 
             // lblPlaca
             // 
             this.lblPlaca.AutoSize = true;
-            this.lblPlaca.Location = new System.Drawing.Point(16, 134);
-            this.lblPlaca.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPlaca.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPlaca.Location = new System.Drawing.Point(12, 109);
             this.lblPlaca.Name = "lblPlaca";
-            this.lblPlaca.Size = new System.Drawing.Size(45, 16);
+            this.lblPlaca.Size = new System.Drawing.Size(44, 17);
             this.lblPlaca.TabIndex = 41;
             this.lblPlaca.Text = "Placa:";
             // 
             // txtModelo
             // 
-            this.txtModelo.Location = new System.Drawing.Point(256, 93);
-            this.txtModelo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtModelo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModelo.Location = new System.Drawing.Point(192, 76);
             this.txtModelo.Name = "txtModelo";
-            this.txtModelo.Size = new System.Drawing.Size(213, 22);
+            this.txtModelo.Size = new System.Drawing.Size(161, 25);
             this.txtModelo.TabIndex = 44;
             // 
             // lblModelo
             // 
             this.lblModelo.AutoSize = true;
-            this.lblModelo.Location = new System.Drawing.Point(253, 71);
-            this.lblModelo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblModelo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblModelo.Location = new System.Drawing.Point(190, 58);
             this.lblModelo.Name = "lblModelo";
-            this.lblModelo.Size = new System.Drawing.Size(56, 16);
+            this.lblModelo.Size = new System.Drawing.Size(59, 17);
             this.lblModelo.TabIndex = 43;
             this.lblModelo.Text = "Modelo:";
             // 
             // txtMotor
             // 
-            this.txtMotor.Location = new System.Drawing.Point(477, 93);
-            this.txtMotor.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMotor.Location = new System.Drawing.Point(358, 76);
             this.txtMotor.Name = "txtMotor";
-            this.txtMotor.Size = new System.Drawing.Size(82, 22);
+            this.txtMotor.Size = new System.Drawing.Size(95, 25);
             this.txtMotor.TabIndex = 46;
             // 
             // lblMotor
             // 
             this.lblMotor.AutoSize = true;
-            this.lblMotor.Location = new System.Drawing.Point(471, 71);
-            this.lblMotor.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblMotor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMotor.Location = new System.Drawing.Point(355, 58);
             this.lblMotor.Name = "lblMotor";
-            this.lblMotor.Size = new System.Drawing.Size(84, 16);
+            this.lblMotor.Size = new System.Drawing.Size(88, 17);
             this.lblMotor.TabIndex = 45;
             this.lblMotor.Text = "Motorização:";
+            this.lblMotor.Click += new System.EventHandler(this.lblMotor_Click);
             // 
             // cmbCliente
             // 
+            this.cmbCliente.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCliente.FormattingEnabled = true;
-            this.cmbCliente.Location = new System.Drawing.Point(114, 34);
+            this.cmbCliente.Location = new System.Drawing.Point(86, 28);
+            this.cmbCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbCliente.Name = "cmbCliente";
-            this.cmbCliente.Size = new System.Drawing.Size(562, 24);
+            this.cmbCliente.Size = new System.Drawing.Size(483, 25);
             this.cmbCliente.TabIndex = 47;
             // 
             // lblAno
             // 
             this.lblAno.AutoSize = true;
-            this.lblAno.Location = new System.Drawing.Point(191, 134);
-            this.lblAno.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblAno.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAno.Location = new System.Drawing.Point(143, 109);
             this.lblAno.Name = "lblAno";
-            this.lblAno.Size = new System.Drawing.Size(34, 16);
+            this.lblAno.Size = new System.Drawing.Size(37, 17);
             this.lblAno.TabIndex = 48;
             this.lblAno.Text = "Ano:";
             // 
             // txtAno
             // 
-            this.txtAno.Location = new System.Drawing.Point(191, 154);
-            this.txtAno.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAno.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAno.Location = new System.Drawing.Point(143, 125);
             this.txtAno.Name = "txtAno";
-            this.txtAno.Size = new System.Drawing.Size(160, 22);
+            this.txtAno.Size = new System.Drawing.Size(121, 25);
             this.txtAno.TabIndex = 49;
             // 
             // frmVeiculoCadastro
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 203);
+            this.ClientSize = new System.Drawing.Size(582, 179);
             this.Controls.Add(this.txtAno);
             this.Controls.Add(this.lblAno);
             this.Controls.Add(this.cmbCliente);
@@ -248,10 +251,9 @@
             this.Controls.Add(this.txtId);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(711, 250);
-            this.MinimumSize = new System.Drawing.Size(711, 250);
+            this.MaximumSize = new System.Drawing.Size(598, 218);
+            this.MinimumSize = new System.Drawing.Size(598, 218);
             this.Name = "frmVeiculoCadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro de Veiculos";

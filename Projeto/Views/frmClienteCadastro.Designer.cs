@@ -150,7 +150,6 @@
             this.txtEndereco.Name = "txtEndereco";
             this.txtEndereco.Size = new System.Drawing.Size(370, 30);
             this.txtEndereco.TabIndex = 11;
-            this.txtEndereco.UseSystemPasswordChar = true;
             // 
             // txtCPF
             // 

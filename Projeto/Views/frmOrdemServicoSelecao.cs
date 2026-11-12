@@ -28,11 +28,6 @@ namespace ProjetoExemploCerto.Views
             dgvRegistros.AutoGenerateColumns = true;
             dgvRegistros.CellDoubleClick += dgvRegistros_CellDoubleClick;
 
-            btnPesquisar.Click += btnPesquisar_Click_1;
-            btnAdicionar.Click += btnAdicionar_Click_1;
-            btnEditar.Click += btnEditar_Click_1;
-            btnExcluir.Click += btnExcluir_Click_1;
-
             CarregarOrdens();
         }
 

@@ -130,7 +130,6 @@
             this.txtNome.Size = new System.Drawing.Size(623, 30);
             this.txtNome.TabIndex = 38;
             this.txtNome.Tag = "";
-            this.txtNome.Text = "Pesquisar Usuarios";
             // 
             // pictureBox1
             // 

@@ -22,7 +22,14 @@ namespace ProjetoExemploCerto.Views
             btnEditar.Click += btnEditar_Click;
             btnExcluir.Click += btnExcluir_Click;
 
-            AtualizarGrid();
+            try
+            {
+                AtualizarGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar os usuários: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void AtualizarGrid()
@@ -31,7 +38,7 @@ namespace ProjetoExemploCerto.Views
 
             string pesquisa = txtNome.Text.Trim().ToLower();
 
-            if (pesquisa != "" && pesquisa != "pesquisar usuários")
+            if (pesquisa != "")
             {
                 usuarios = usuarios.Where(u =>
                     (u.Nome ?? "").ToLower().Contains(pesquisa) ||

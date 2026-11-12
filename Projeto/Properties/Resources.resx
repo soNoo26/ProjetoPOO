@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="powerful-headlights-particle-view-modern-luxury-cars-parked-indoors-daytime" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\powerful-headlights-particle-view-modern-luxury-cars-parked-indoors-daytime.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-product-90" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\icons8-product-90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,5 +141,8 @@
   </data>
   <data name="icons8-clipboard-100" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\icons8-clipboard-100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mid-adult-mechanic-working-laptop-while-running-car-diagnostic-with-his-coworker-auto-repair-shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\mid-adult-mechanic-working-laptop-while-running-car-diagnostic-with-his-coworker-auto-repair-shop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

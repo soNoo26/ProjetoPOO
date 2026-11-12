@@ -42,20 +42,19 @@
             // lblRegistros
             // 
             this.lblRegistros.AutoSize = true;
-            this.lblRegistros.Location = new System.Drawing.Point(16, 295);
-            this.lblRegistros.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblRegistros.Location = new System.Drawing.Point(12, 240);
             this.lblRegistros.Name = "lblRegistros";
-            this.lblRegistros.Size = new System.Drawing.Size(44, 16);
+            this.lblRegistros.Size = new System.Drawing.Size(51, 13);
             this.lblRegistros.TabIndex = 53;
-            this.lblRegistros.Text = "label4";
+            this.lblRegistros.Text = "Registros";
             // 
             // btnAdicionar
             // 
             this.btnAdicionar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAdicionar.Location = new System.Drawing.Point(565, 331);
-            this.btnAdicionar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdicionar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdicionar.Location = new System.Drawing.Point(328, 262);
             this.btnAdicionar.Name = "btnAdicionar";
-            this.btnAdicionar.Size = new System.Drawing.Size(100, 28);
+            this.btnAdicionar.Size = new System.Drawing.Size(107, 33);
             this.btnAdicionar.TabIndex = 51;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
@@ -64,10 +63,10 @@
             // btnEditar
             // 
             this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnEditar.Location = new System.Drawing.Point(781, 331);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Location = new System.Drawing.Point(441, 262);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(100, 28);
+            this.btnEditar.Size = new System.Drawing.Size(107, 33);
             this.btnEditar.TabIndex = 50;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -76,10 +75,10 @@
             // btnExcluir
             // 
             this.btnExcluir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnExcluir.Location = new System.Drawing.Point(673, 331);
-            this.btnExcluir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnExcluir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluir.Location = new System.Drawing.Point(554, 262);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(100, 28);
+            this.btnExcluir.Size = new System.Drawing.Size(107, 33);
             this.btnExcluir.TabIndex = 49;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -89,22 +88,21 @@
             // 
             this.dgvRegistros.AllowUserToAddRows = false;
             this.dgvRegistros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRegistros.Location = new System.Drawing.Point(16, 75);
-            this.dgvRegistros.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvRegistros.Location = new System.Drawing.Point(12, 61);
             this.dgvRegistros.MultiSelect = false;
             this.dgvRegistros.Name = "dgvRegistros";
             this.dgvRegistros.RowHeadersVisible = false;
             this.dgvRegistros.RowHeadersWidth = 51;
             this.dgvRegistros.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvRegistros.Size = new System.Drawing.Size(865, 217);
+            this.dgvRegistros.Size = new System.Drawing.Size(649, 176);
             this.dgvRegistros.TabIndex = 47;
             // 
             // btnPesquisar
             // 
-            this.btnPesquisar.Location = new System.Drawing.Point(781, 34);
-            this.btnPesquisar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnPesquisar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPesquisar.Location = new System.Drawing.Point(586, 28);
             this.btnPesquisar.Name = "btnPesquisar";
-            this.btnPesquisar.Size = new System.Drawing.Size(100, 28);
+            this.btnPesquisar.Size = new System.Drawing.Size(75, 27);
             this.btnPesquisar.TabIndex = 46;
             this.btnPesquisar.Text = "Pesquisar";
             this.btnPesquisar.UseVisualStyleBackColor = true;
@@ -112,28 +110,27 @@
             // 
             // txtPesquisa
             // 
-            this.txtPesquisa.Location = new System.Drawing.Point(16, 37);
-            this.txtPesquisa.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPesquisa.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisa.Location = new System.Drawing.Point(12, 30);
             this.txtPesquisa.Name = "txtPesquisa";
-            this.txtPesquisa.Size = new System.Drawing.Size(756, 22);
+            this.txtPesquisa.Size = new System.Drawing.Size(568, 25);
             this.txtPesquisa.TabIndex = 45;
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(16, 10);
-            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblTitulo.Location = new System.Drawing.Point(12, 8);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(159, 23);
+            this.lblTitulo.Size = new System.Drawing.Size(134, 19);
             this.lblTitulo.TabIndex = 44;
             this.lblTitulo.Text = "Veiculo Cadstrado:";
             // 
             // frmVeiculoSelecao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 370);
+            this.ClientSize = new System.Drawing.Size(674, 307);
             this.Controls.Add(this.lblRegistros);
             this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.btnEditar);
@@ -143,10 +140,9 @@
             this.Controls.Add(this.txtPesquisa);
             this.Controls.Add(this.lblTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(915, 417);
-            this.MinimumSize = new System.Drawing.Size(915, 417);
+            this.MaximumSize = new System.Drawing.Size(690, 346);
+            this.MinimumSize = new System.Drawing.Size(690, 346);
             this.Name = "frmVeiculoSelecao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Seleção de Veiculos";

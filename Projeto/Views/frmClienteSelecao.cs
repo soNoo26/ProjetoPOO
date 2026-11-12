@@ -19,6 +19,15 @@ namespace ProjetoExemploCerto.Views
         public frmClienteSelecao()
         {
             InitializeComponent();
+
+            try
+            {
+                AtualizarGrid();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao carregar os clientes: " + ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void AtualizarGrid()
@@ -114,8 +123,15 @@ namespace ProjetoExemploCerto.Views
             DialogResult resposta = MessageBox.Show($"Tem certeza que deseja excluir o cliente '{cliente.Nome}'?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (resposta == DialogResult.Yes)
             {
-                clienteController.Excluir(cliente.ClienteId);
-                AtualizarGrid();
+                try
+                {
+                    clienteController.Excluir(cliente.ClienteId);
+                    AtualizarGrid();
+                }
+                catch (System.Data.SqlClient.SqlException ex) when (ex.Number == 547)
+                {
+                    MessageBox.Show("Não é possível excluir: este cliente possui veículos ou ordens de serviço.", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
         }
     }

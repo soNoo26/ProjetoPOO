@@ -129,5 +129,26 @@ namespace ProjetoExemploCerto.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mid_adult_mechanic_working_laptop_while_running_car_diagnostic_with_his_coworker_auto_repair_shop {
+            get {
+                object obj = ResourceManager.GetObject("mid-adult-mechanic-working-laptop-while-running-car-diagnostic-with-his-coworker-" +
+                        "auto-repair-shop", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap powerful_headlights_particle_view_modern_luxury_cars_parked_indoors_daytime {
+            get {
+                object obj = ResourceManager.GetObject("powerful-headlights-particle-view-modern-luxury-cars-parked-indoors-daytime", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

@@ -180,5 +180,20 @@ namespace ProjetoExemploCerto.Views
                     .DefaultCellStyle.Format = "dd/MM/yyyy HH:mm";
             }
         }
+
+        private void lblPrevisao_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblProblema_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
